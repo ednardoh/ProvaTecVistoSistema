@@ -1,0 +1,30 @@
+unit uCalchoramtnModel;
+
+interface
+
+type
+  TCalchoramtnModel = class
+    private
+      FCalculaHoraMTN: TDateTime;
+      procedure SetCalculaHoraMTN(const Value: TdateTime);
+    public
+     function RetirnaMTN(AValor: TdateTime): string;
+     property CalculaHoraMTN: TdateTime read FCalculaHoraMTN write SetCalculaHoraMTN;
+  end;
+
+implementation
+
+{ TCalchoramtnModel }
+
+procedure TCalchoramtnModel.SetCalculaHoraMTN(const Value: TdateTime);
+begin
+  FCalculaHoraMTN := Value;
+end;
+
+function TCalchoramtnModel.RetirnaMTN(AValor: TdateTime): string;
+begin
+  //
+end;
+
+
+end.

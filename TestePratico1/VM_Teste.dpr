@@ -1,0 +1,18 @@
+program VM_Teste;
+
+uses
+  Forms,
+  Main in 'Main.pas' {frmPrincipal},
+  about in 'about.pas' {AboutBox},
+  udmPrincipal in 'udmPrincipal.pas' {dmPrincipal: TDataModule},
+  uCadCliente in 'uCadCliente.pas' {frmCadClientes};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TAboutBox, AboutBox);
+  Application.CreateForm(TdmPrincipal, dmPrincipal);
+  Application.Run;
+end.

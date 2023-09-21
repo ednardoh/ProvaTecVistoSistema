@@ -1,0 +1,63 @@
+unit MAIN;
+
+interface
+
+uses Winapi.Windows, System.SysUtils, System.Classes, Vcl.Graphics, Vcl.Forms,
+  Vcl.Controls, Vcl.Menus, Vcl.StdCtrls, Vcl.Dialogs, Vcl.Buttons, Winapi.Messages,
+  Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.StdActns, Vcl.ActnList, Vcl.ToolWin,
+  Vcl.ImgList, System.ImageList, System.Actions;
+
+type
+  TfrmPrincipal = class(TForm)
+    MainMenu1: TMainMenu;
+    File1: TMenuItem;
+    FileNewItem: TMenuItem;
+    Help1: TMenuItem;
+    N1: TMenuItem;
+    FileExitItem: TMenuItem;
+    HelpAboutItem: TMenuItem;
+    OpenDialog: TOpenDialog;
+    StatusBar: TStatusBar;
+    ActionList1: TActionList;
+    ToolBar2: TToolBar;
+    ToolButton1: TToolButton;
+    ToolButton2: TToolButton;
+    ToolButton3: TToolButton;
+    ToolButton4: TToolButton;
+    ToolButton5: TToolButton;
+    ToolButton6: TToolButton;
+    ToolButton9: TToolButton;
+    ToolButton7: TToolButton;
+    ToolButton8: TToolButton;
+    ToolButton10: TToolButton;
+    ToolButton11: TToolButton;
+    ImageList1: TImageList;
+    procedure HelpAbout1Execute(Sender: TObject);
+    procedure FileExit1Execute(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses About;
+
+
+procedure TfrmPrincipal.HelpAbout1Execute(Sender: TObject);
+begin
+  AboutBox.ShowModal;
+end;
+
+procedure TfrmPrincipal.FileExit1Execute(Sender: TObject);
+begin
+  Close;
+end;
+
+end.

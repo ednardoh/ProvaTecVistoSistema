@@ -1,0 +1,65 @@
+object frmBuscaCEP: TfrmBuscaCEP
+  Left = 0
+  Top = 0
+  Caption = 'Busca CEP'
+  ClientHeight = 312
+  ClientWidth = 701
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btn_BuscaCEP: TSpeedButton
+    Left = 111
+    Top = 37
+    Width = 23
+    Height = 22
+    Caption = '...'
+  end
+  object Label1: TLabel
+    Left = 13
+    Top = 22
+    Width = 58
+    Height = 13
+    Caption = 'Digite o CEP'
+  end
+  object MSK_Cep: TMaskEdit
+    Left = 10
+    Top = 37
+    Width = 95
+    Height = 21
+    EditMask = '##.###-###;0; '
+    MaxLength = 10
+    TabOrder = 0
+    Text = ''
+  end
+  object RESTClient1: TRESTClient
+    Params = <>
+    HandleRedirects = True
+    Left = 40
+    Top = 268
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 74
+    Top = 268
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 106
+    Top = 268
+  end
+  object RESTResponseDataSetAdapter: TRESTResponseDataSetAdapter
+    FieldDefs = <>
+    Response = RESTResponse1
+    Left = 138
+    Top = 268
+  end
+end

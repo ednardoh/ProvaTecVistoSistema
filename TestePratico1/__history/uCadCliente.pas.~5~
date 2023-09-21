@@ -1,0 +1,45 @@
+unit uCadCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.DBCtrls, Vcl.Mask,
+  Vcl.ExtCtrls;
+
+type
+  TfrmCadClientes = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    DBNavigator1: TDBNavigator;
+    Edt_ID: TDBEdit;
+    Edt_Idade: TDBEdit;
+    Edt_Nome: TDBEdit;
+    Edt_Sobrenome: TDBEdit;
+    DBI_Foto: TDBImage;
+    btnSalvar: TButton;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadClientes: TfrmCadClientes;
+
+implementation
+
+Uses udmPrincipal;
+
+{$R *.dfm}
+
+procedure TfrmCadClientes.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := cafree;
+end;
+
+end.

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/27 12:48:13.000.562,=C:\Users\ednar\OneDrive\Documentos\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2023/05/27 12:48:16.000.172,=C:\Users\ednar\OneDrive\Documentos\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2023/09/20 02:44:20.000.512,=C:\Users\ednar\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/21 13:12:57.000.577,=C:\Users\ednar\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/21 17:32:21.000.332,=C:\Users\ednar\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/21 17:32:53.000.844,C:\Users\ednar\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Sistemas\Visto Sistemas\TestePratico3\uBuscaCEP.dfm</Transaction>
+    <Transaction>2023/09/21 17:32:53.000.844,C:\Users\ednar\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Sistemas\Visto Sistemas\TestePratico3\uBuscaCEP.pas</Transaction>
+    <Transaction>2023/09/21 17:33:04.000.528,C:\Users\ednar\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Sistemas\Visto Sistemas\TestePratico3\BuscaCEP.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

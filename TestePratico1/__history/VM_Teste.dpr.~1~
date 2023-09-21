@@ -1,0 +1,15 @@
+program VM_Teste;
+
+uses
+  Forms,
+  Main in 'Main.pas' {frmPrincipal},
+  about in 'about.pas' {AboutBox};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TAboutBox, AboutBox);
+  Application.Run;
+end.

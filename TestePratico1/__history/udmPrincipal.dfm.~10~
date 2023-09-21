@@ -1,0 +1,56 @@
+object dmPrincipal: TdmPrincipal
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 257
+  Width = 392
+  object FDConn: TFDConnection
+    Params.Strings = (
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'Server=localhost'
+      'DriverID=FB')
+    LoginPrompt = False
+    Left = 32
+    Top = 24
+  end
+  object QryPessoa: TFDQuery
+    Connection = FDConn
+    SQL.Strings = (
+      'select * from pessoa')
+    Left = 120
+    Top = 24
+    object QryPessoaID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object QryPessoaNOME: TStringField
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Size = 50
+    end
+    object QryPessoaSOBRENOME: TStringField
+      FieldName = 'SOBRENOME'
+      Origin = 'SOBRENOME'
+      Size = 50
+    end
+    object QryPessoaIDADE: TIntegerField
+      FieldName = 'IDADE'
+      Origin = 'IDADE'
+    end
+    object QryPessoaFOTO: TBlobField
+      FieldName = 'FOTO'
+      Origin = 'FOTO'
+    end
+  end
+  object ds_Pessoa: TDataSource
+    DataSet = QryPessoa
+    Left = 200
+    Top = 24
+  end
+  object OPD_AbreBanco: TOpenDialog
+    Left = 280
+    Top = 24
+  end
+end

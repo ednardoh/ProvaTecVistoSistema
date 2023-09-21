@@ -1,0 +1,17 @@
+unit uCalchoramtnModel;
+
+interface
+
+type
+  TCalchoramtnModel = class
+    private
+      FCalculaHoraMTN: TDateTime;
+      procedure SetSetCalculaHoraMTN(const value: TDateTime);
+    public
+
+     property CalculaHoraMTN: TdateTime read FCalculaHoraMTN write SetFCalculaHoraMTN;
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,31 @@
+unit CalculaHoraMTN;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uCalchoramtnControl, Vcl.StdCtrls,
+  Vcl.Mask;
+
+type
+  TfrmCalcHoraMTN = class(TForm)
+    msk_Hora: TMaskEdit;
+    lbl_Hora: TLabel;
+    Mem_Resultado: TMemo;
+    Label1: TLabel;
+    btnCalcula: TButton;
+  private
+    { Private declarations }
+    FCalchoramtnControl: TCalchoramtnControl;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCalcHoraMTN: TfrmCalcHoraMTN;
+
+implementation
+
+{$R *.dfm}
+
+end.

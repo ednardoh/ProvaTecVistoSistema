@@ -1,0 +1,20 @@
+unit uCalchoramtnControl;
+
+interface
+
+Uses uCalchoramtnModel;
+
+type
+  TCalchoramtnControl = class
+    private
+      FCalchoramtnModel: TCalchoramtnModel;
+
+    public
+      constructor Create;
+      destructor Destroy; override;
+
+  end;
+
+implementation
+
+end.

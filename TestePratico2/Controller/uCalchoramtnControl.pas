@@ -1,0 +1,42 @@
+unit uCalchoramtnControl;
+
+interface
+
+Uses uCalchoramtnModel;
+
+type
+  TCalchoramtnControl = class
+    private
+      FCalchoramtnModel: TCalchoramtnModel;
+
+    public
+      constructor Create;
+      destructor Destroy; override;
+
+      function RetirnaMTN(AValor: TdateTime): string;
+
+      property CalchoramtnModel: TCalchoramtnModel read FCalchoramtnModel write FCalchoramtnModel;
+
+  end;
+
+implementation
+
+{ TCalchoramtnControl }
+
+constructor TCalchoramtnControl.Create;
+begin
+  FCalchoramtnModel:= TCalchoramtnModel.Create;
+end;
+
+destructor TCalchoramtnControl.Destroy;
+begin
+  FCalchoramtnModel.Free;
+  inherited;
+end;
+
+function TCalchoramtnControl.RetirnaMTN(AValor: TdateTime): string;
+begin
+  Result := FCalchoramtnModel.RetornaMTN(AValor);
+end;
+
+end.
